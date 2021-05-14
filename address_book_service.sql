@@ -49,3 +49,14 @@ select * from address_book where city='Jaipur';
 
 #Reterive Data using state
 select * from address_book where state='Rajasthan';
+
+
+#UC7
+#All data size
+select count(*) from address_book;
+
+#Count of person of specific city
+select count(*) from address_book where city='Jaipur';
+
+#Count of person of specific state
+select count(*) from address_book where state='Rajasthan';
