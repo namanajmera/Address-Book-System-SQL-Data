@@ -30,3 +30,8 @@ insert into address_book (f_name,l_name,address,city,state,zip,phone_number,emai
 ('Arpit','Ajmera','Ajmera Bhawan Chaksu','Jaipur','Rajasthan',303901,'9004382719','arpit.ajmera@gmail.com'),
 ('Sonalika','Bhide','23/12 Andheri West','Mumbai','Maharastra',144001,'8756473819','sonalika.bhide@gmail.com'),
 ('Anuradha','Dhuria','231/11 Pratap Nagar','Ganganagar','Rajasthan',321001,'8756473819','anuradha.dhuria@gmail.com');
+
+
+#UC4
+update address_book set zip=303210 where f_name='Anuradha';
+update address_book set city='Udaipur' where f_name='Aditya';
