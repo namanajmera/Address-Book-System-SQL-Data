@@ -20,3 +20,13 @@ create table address_book
 );
 
 desc address_book;
+
+
+#UC3
+insert into address_book (f_name,l_name,address,city,state,zip,phone_number,email) values 
+('Naman','Ajmera','Ajmera bhawan near sabji mandi chaksu.','Jaipur','Rajasthan',303901,'8696696426','cool.naman.ajmera@gmail.com'),
+('Aditya','Verma','401/12 Malviya nagar','Jaipur','Rajasthan',302012,'8654839281','aditya.verma@gmail.com'),
+('Ankita','Gupta','90/12 Sanganer','Jaipur','Rajasthan',302029,'8750943201','ankita.gupta@gmail.com'),
+('Arpit','Ajmera','Ajmera Bhawan Chaksu','Jaipur','Rajasthan',303901,'9004382719','arpit.ajmera@gmail.com'),
+('Sonalika','Bhide','23/12 Andheri West','Mumbai','Maharastra',144001,'8756473819','sonalika.bhide@gmail.com'),
+('Anuradha','Dhuria','231/11 Pratap Nagar','Ganganagar','Rajasthan',321001,'8756473819','anuradha.dhuria@gmail.com');
