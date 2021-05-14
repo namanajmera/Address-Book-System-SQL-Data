@@ -60,3 +60,11 @@ select count(*) from address_book where city='Jaipur';
 
 #Count of person of specific state
 select count(*) from address_book where state='Rajasthan';
+
+
+#UC8
+#By f_name
+select * from address_book order by f_name;
+
+#By f_name with given city
+select * from address_book where city='Jaipur' order by f_name;
