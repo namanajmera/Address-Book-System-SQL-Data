@@ -38,3 +38,14 @@ update address_book set city='Udaipur' where f_name='Aditya';
 
 #UC5
 delete from address_book where f_name='Sonalika';
+
+
+#UC6
+#Reterive All Data
+select * from address_book;
+
+#Reterive Data using city
+select * from address_book where city='Jaipur';
+
+#Reterive Data using state
+select * from address_book where state='Rajasthan';
