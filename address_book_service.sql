@@ -35,3 +35,6 @@ insert into address_book (f_name,l_name,address,city,state,zip,phone_number,emai
 #UC4
 update address_book set zip=303210 where f_name='Anuradha';
 update address_book set city='Udaipur' where f_name='Aditya';
+
+#UC5
+delete from address_book where f_name='Sonalika';
