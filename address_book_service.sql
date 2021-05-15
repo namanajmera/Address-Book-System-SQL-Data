@@ -89,3 +89,18 @@ insert into address_book (f_name,l_name,address,city,state,zip,phone_number,emai
 ('Bill','Calton','40/11 Seattle','Seattle','Washington',98101,'6574639271','bill.calton@gmail.com','Friend'),
 ('Bill','Calton','40/11 Seattle','Seattle','Washington',98101,'6574639271','bill.calton@gmail.com','Family');
 #we can not insert two contact information because email id should be unique values
+
+#UC12
+#Creating some different table so that Normalization can be achived.
+#Creating contact_table with single value table.
+
+#1st table name contact_table
+create table contact_table select id,f_name,l_name,phone_number,email from address_book;
+
+#2nd table name:- address_table
+create table address_table select id,address,city,state,zip from address_book;
+
+#3rd table name:- contact_type
+create table contact_type select id,f_name,l_name,type from address_book;
+
+show tables;
