@@ -68,3 +68,14 @@ select * from address_book order by f_name;
 
 #By f_name with given city
 select * from address_book where city='Jaipur' order by f_name;
+
+#UC9
+alter table address_book add type varchar(100) NOT NULL;
+
+#Updating the data.
+update address_book set type="Family" where f_name='Naman';
+update address_book set type="Profession" where f_name='Aditya';
+update address_book set type="Profession" where f_name='Ankita';
+update address_book set type="Family" where f_name='Arpit';
+update address_book set type="Friend" where f_name='Anuradha';
+
