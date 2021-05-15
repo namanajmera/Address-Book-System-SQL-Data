@@ -79,3 +79,5 @@ update address_book set type="Profession" where f_name='Ankita';
 update address_book set type="Family" where f_name='Arpit';
 update address_book set type="Friend" where f_name='Anuradha';
 
+#10
+select count(*),type from address_book group by type;
