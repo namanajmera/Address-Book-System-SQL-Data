@@ -104,3 +104,45 @@ create table address_table select id,address,city,state,zip from address_book;
 create table contact_type select id,f_name,l_name,type from address_book;
 
 show tables;
+select * from contact_table;
+
+#UC13
+#reteriveal of UC6
+
+#Reterive Data using city
+select contact_table.f_name,address_table.city,address_table.state
+from contact_table
+inner join address_table on address_table.id=contact_table.id
+where address_table.city='Jaipur';
+
+#Reterive Data using state
+select contact_table.f_name,address_table.city,address_table.state
+from contact_table
+inner join address_table on address_table.id=contact_table.id
+where address_table.state='Rajasthan';
+
+#reterival of UC7
+#Count of person of specific city
+select count(*)
+from contact_table
+inner join address_table on address_table.id=contact_table.id
+where address_table.city='Jaipur';
+
+#Count of person of specific state
+select count(*)
+from contact_table
+inner join address_table on address_table.id=contact_table.id
+where address_table.state='Rajasthan';
+
+#reterival UC8
+#By f_name with given city
+select * from address_book where city='Jaipur' order by f_name;
+
+select *
+from contact_table
+inner join address_table on address_table.id=contact_table.id
+where city='Jaipur'
+order by contact_table.f_name;
+
+#reterival of UC10
+select count(*),type from contact_type group by type;
