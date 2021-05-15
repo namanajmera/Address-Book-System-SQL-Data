@@ -81,3 +81,11 @@ update address_book set type="Friend" where f_name='Anuradha';
 
 #10
 select count(*),type from address_book group by type;
+
+select * from address_book;
+
+#UC11
+insert into address_book (f_name,l_name,address,city,state,zip,phone_number,email,type) values 
+('Bill','Calton','40/11 Seattle','Seattle','Washington',98101,'6574639271','bill.calton@gmail.com','Friend'),
+('Bill','Calton','40/11 Seattle','Seattle','Washington',98101,'6574639271','bill.calton@gmail.com','Family');
+#we can not insert two contact information because email id should be unique values
